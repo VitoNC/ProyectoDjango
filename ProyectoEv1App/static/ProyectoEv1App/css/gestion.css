@@ -279,9 +279,13 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
-/*
-.linksCategorias {
-  color: white !important;
-  text-decoration: underline !important;
+
+/*Mis Estilos*/
+.contenedorFormulario {
+  background-color: black;
+  width: 50%;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 1px 0px;
+
 }
-*/
