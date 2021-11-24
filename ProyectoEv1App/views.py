@@ -9,8 +9,7 @@ def home(request):
 
 
 
-def tienda(request):
-    return render(request, "ProyectoEv1App/tienda.html")
+
 
 
 

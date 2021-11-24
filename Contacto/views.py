@@ -14,11 +14,11 @@ def contacto(request):
         if formulario_contacto.is_valid():
             nombre = request.POST.get("Nombre")
             email = request.POST.get("Email")
-            contenido = request.POST.get("Contenido")
+            mensaje = request.POST.get("Mensaje")
 
 
             email = EmailMessage("Mensaje desde Web Music.All", 
-            "El usuario {}, con direccion {}, escribe:\n\n {}".format(nombre, email, contenido),
+            "El usuario {}, con direccion {}, escribe:\n\n {}".format(nombre, email, mensaje),
             "",["proyectodjango.music.all@gmail.com"], reply_to=[email])
 
             try:
