@@ -20,14 +20,13 @@ class Categoria(models.Model):
 
 class Post(models.Model):
     titulo = models.CharField(max_length=50)
-    contenido = models.CharField(max_length=50)
+    contenido = models.CharField(max_length=200)
     imagen = models.ImageField(upload_to='Blog', null=True, blank=True)
 
     #
     autor = models.ForeignKey(User, on_delete=models.CASCADE)
     
     categorias = models.ManyToManyField(Categoria)
-
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now_add=True)
 
